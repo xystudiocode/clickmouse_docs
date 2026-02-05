@@ -5,14 +5,11 @@ on:
   push:
     branches:
       - main # 推送到 main 分支时触发
-  # 手动在 GitHub 仓库的 Actions 标签页点击触发
   workflow_dispatch:
 
-# 设置此工作流文件的权限，使其能将构建产物写入到 gh-pages 分支
 permissions:
   contents: write
 
-# 2. 定义一个名为 “build-and-deploy” 的任务
 jobs:
   build-and-deploy:
     # 任务运行的环境：最新版本的 Ubuntu 虚拟机
@@ -37,11 +34,11 @@ jobs:
 
       # 构建项目（生成静态文件到 dist/ 或 build/ 目录）
       - name: Build Project 🏗️
-        run: npm run build # 对目录进行操作
+        run: npm run build
 
       # 部署到 GitHub Pages 分支
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: docs/.vitepress/dist
