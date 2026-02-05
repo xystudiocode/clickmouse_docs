@@ -10,12 +10,13 @@ export default defineConfig({
 
   // 主题配置
   themeConfig: {
-    logo: './logo.svg',
+    logo: './icon.ico',
     siteTitle: 'TechDocs',
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-repo' }
+      { icon: 'github', link: 'https://github.com/xystudio889/clickmouse_docs' }
+      { icon: 'github', link: 'https://github.com/xystudio889/pyclickmouse' }
     ],
     
     // 搜索功能
@@ -35,7 +36,7 @@ export default defineConfig({
         outlineTitle: 'On this page',
         lastUpdatedText: 'Last Updated',
         editLink: {
-          pattern: 'https://github.com/your-repo/edit/main/docs/en/:path',
+          pattern: 'https://github.com/xystudiocode/clickmouse_docs/tree/main/docs',
           text: 'Edit this page'
         }
       }
@@ -49,7 +50,7 @@ export default defineConfig({
         outlineTitle: '本页目录',
         lastUpdatedText: '最后更新',
         editLink: {
-          pattern: 'https://github.com/your-repo/edit/main/docs/zh-CN/:path',
+          pattern: 'https://github.com/xystudiocode/clickmouse_docs/tree/main/docs',
           text: '编辑此页'
         }
       }
@@ -61,10 +62,8 @@ export default defineConfig({
 function getNav(lang) {
   const navs = {
     en: [
-      { text: 'Guide', link: '/en/guide/getting-started' },
     ],
     "zh-CN": [
-      { text: '指南', link: '/zh-CN/guide/getting-started' },
     ],
   }
   return navs[lang]
@@ -74,26 +73,8 @@ function getNav(lang) {
 function getSidebar(lang) {
   const sidebars = {
     en: {
-      '/en/guide/': [
-        {
-          text: 'Getting Started',
-          collapsible: true,
-          items: [
-            { text: 'Introduction', link: '/en/guide/getting-started' }
-          ]
-        }
-      ]
     },
     "zh-CN": {
-      '/zh-CN/guide/': [
-        {
-          text: '快速开始',
-          collapsible: true,
-          items: [
-            { text: '介绍', link: '/zh-CN/guide/getting-started' }
-          ]
-        }
-      ],
     }
   }
   return sidebars[lang]
