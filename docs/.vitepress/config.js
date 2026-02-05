@@ -15,8 +15,8 @@ export default defineConfig({
     
     // 社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xystudio889/clickmouse_docs' },
-      { icon: 'github', link: 'https://github.com/xystudio889/pyclickmouse' }
+      { icon: 'github', link: 'https://github.com/xystudiocode/clickmouse_docs' },
+      { icon: 'github', link: 'https://github.com/xystudiocode/pyclickmouse' }
     ],
     
     // 搜索功能
