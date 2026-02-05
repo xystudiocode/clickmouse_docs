@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.DR3m5Kkl.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"home","lang":"zh-CN"},"headers":[],"relativePath":"zh-CN/index.md","filePath":"zh-CN/index.md"}'),n={name:"zh-CN/index.md"};function o(r,s,c,d,i,p){return t(),a("div")}const h=e(n,[["render",o]]);export{m as __pageData,h as default};
