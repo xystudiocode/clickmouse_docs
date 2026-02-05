@@ -1,0 +1,34 @@
+---
+layout: home
+lang: zh-CN
+
+hero:
+  name: TechDocs
+  text: 现代化技术文档
+  tagline: 使用 VitePress 构建的多语言文档站点
+  image:
+    src: /hero-image.png
+    alt: TechDocs Logo
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /zh-CN/guide/getting-started
+    - theme: alt
+      text: 在 GitHub 上查看
+      link: https://github.com/your-repo
+
+features:
+  - title: 多语言支持
+    details: 完整支持英文、中文、日文等多种语言
+  - title: 快速轻量
+    details: 基于 VitePress 构建，性能优异
+  - title: SEO 友好
+    details: 内置 SEO 优化
+  - title: 响应式设计
+    details: 在移动端和桌面端完美运行
+  - title: 深色模式
+    details: 内置深色模式支持
+  - title: 搜索功能
+    details: 支持全站全文搜索
+
+---

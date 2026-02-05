@@ -1,0 +1,23 @@
+{
+  "name": "vitepress-multilingual-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A multi-language documentation site built with VitePress",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "documentation",
+    "vitepress",
+    "multilingual",
+    "docs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.32",
+    "vue": "^3.3.0"
+  }
+}
