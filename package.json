@@ -1,8 +1,8 @@
 {
-  "name": "vitepress-multilingual-docs",
-  "version": "1.0.0",
+  "name": "clickmouse_docs",
+  "version": "1.2.0",
   "type": "module",
-  "description": "A multi-language documentation site built with VitePress",
+  "description": "Clickmouse documentation built in vitepress",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
@@ -11,10 +11,10 @@
   "keywords": [
     "documentation",
     "vitepress",
-    "multilingual",
+    "clickmouse",
     "docs"
   ],
-  "author": "Your Name",
+  "author": "xystudio",
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.32",
