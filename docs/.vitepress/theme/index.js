@@ -1,27 +1,17 @@
 import DefaultTheme from 'vitepress/theme';
-import { h, onMounted, ref } from 'vue';
+import { h } from 'vue';
 import './custom.css'
 
 // 多语言404页面内容
 const NotFoundContent = {
-  'zh-CN': {
-    title: '页面不存在',
-    message: '只要不改变你的方向，一直寻找，最终将会找到你所寻找的目标。',
-    backToHome: '返回主页',
-    skipToContent: '前往内容',
-  },
   'en': {
     title: 'PAGE NOT FOUND',
     message: "But if you don't change your direction, and if you keep looking, you will end up where you are heading.",
+    fix_method: "Fix method:Refresh the webpage, if it doesn't work again, this page is really not found.",
     backToHome: 'Take me home',
     skipToContent: 'Skip to content',
   },
 };
-
-const path = ref('')
-onMounted(() => {
-  path.value = window?.location?.pathname || '/';
-})
 
 export default {
   ...DefaultTheme,
@@ -29,17 +19,7 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // 覆盖404插槽
       'not-found': () => {
-        let lang = 'en';
-        const start = '/clickmouse_docs/';
-
-        // 从URL路径判断语言
-        if (path.value.startsWith(start + 'zh-CN/')) lang = 'zh-CN';
-        else if (path.value.startsWith(start + 'en/')) lang = 'en';
-        else lang = 'en';
-
-        const content = NotFoundContent[lang] || NotFoundContent['en'];
-
-        console.log(lang)
+        const content = NotFoundContent['en'];
         return h('div', [
           h(
             'style',
@@ -238,18 +218,19 @@ body {
                     class: 'divider_notFound',
                   }),
                   h(
-                    'blockquote',
+                    'div',
                     {
                       class: 'quote',
                     },
-                    content.message,
+                    [
+                    h('p', { }, content.message), h('p', { }, content.fix_method)]
                   ),
                   h('div', { class: 'action' }, [
                     h(
                       'a',
                       {
-                        'aria-label': 'go to home',
-                        href: `/clickmouse_docs/${lang}/`,
+                        'aria-label': 'Go to home',
+                        href: `/clickmouse_docs/`,
                         class: 'link_notFound',
                       },
                       content.backToHome,
