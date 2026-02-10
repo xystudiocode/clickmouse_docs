@@ -1,36 +1,26 @@
-<script>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-    // 获取用户首选语言
-    const userLang = navigator.language || navigator.userLanguage;
-
-    // 定义语言映射关系
-    const languageMap = {
-        'zh-CN': 'zh-CN',        // 简体中文
-        'en': 'en',           // 英语
-        'en-US': 'en',           // 英语
-    };
-
-    // 获取基础语言代码（前两位）
-    const baseLang = userLang.split('-')[0].toLowerCase();
-
-    // 确定目标语言（优先匹配完整代码，其次匹配基础语言）
-    let targetLang = languageMap[userLang] || languageMap[baseLang] || '404';
-
-    console.log(targetLang)
-
-    // 构建目标URL（假设语言作为路径参数）
-    const newPath = `/clickmouse_docs/${targetLang}`;
-
-    // 跳转到对应语言页面
-    if (targetLang !== '404') {
-        window.location.href = newPath;
-    }
-})
+<script setup>
+  import { onMounted } from 'vue';
+  // 支持的语言配置
+  const languageMappings = {
+    'zh': 'zh-CN',
+    'en': 'en-US',
+  };
+  // 获取浏览器语言
+  const browserLang = navigator.language || navigator.userLanguage;
+  const mainLang = browserLang.split('-')[0];
+  
+  // 根据映射获取目标语言，如果没有则使用默认
+  const targetLang = languageMappings[browserLang] || 
+                     languageMappings[mainLang] || 
+                     'en-US';
+  
+  // 跳转到对应语言目录
+  onMounted(() => {
+    window.location.href = `/clickmouse_docs/${targetLang}/`;
+  });
 </script>
 
-# Please select a language to view the documentation.
+# Please select your language
 
-- [English](./en/)
-- [简体中文](./zh-CN/)
+- [English](/en/)
+- [简体中文](/zh-CN/)
