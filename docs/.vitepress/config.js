@@ -54,6 +54,7 @@ export default defineConfig({
       }
     }
   },
+  appearance: import('@vueuse/core').UseDarkOptions,
 
   // 多语言配置
   locales: {
@@ -90,7 +91,7 @@ export default defineConfig({
                 { text: 'Getting Started', link: '/en/guide/getting-started.html' },
               ]
             }
-          ]
+          ],
         },
         nav: [
           { text: 'Home', link: '/en/' },
