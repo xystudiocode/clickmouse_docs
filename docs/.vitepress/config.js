@@ -63,6 +63,7 @@ export default defineConfig({
       description: 'Clickmouse docs powered by vitepress',
       label: 'English',
       lang: 'en',
+      link: '/en/',
       themeConfig: {
         outlineTitle: 'On this page',
         lastUpdatedText: 'Last Updated',
@@ -73,6 +74,11 @@ export default defineConfig({
         docFooter: {
           prev: 'Previous',
           next: 'Next',
+        },
+        notFound: {
+          title: 'PAGE NOT FOUND',
+          quote: "But if you don't change your direction, and if you keep looking, you may end up where you are heading.",
+          linkText: 'Take me home'
         },
         // 配置主题
         lightModeSwitchTitle: 'Switch to light mode',
@@ -104,6 +110,7 @@ export default defineConfig({
       label: '简体中文',
       description: '基于 vitepress 搭建的 Clickmouse 文档',
       title: 'Clickmouse 文档 | VitePress',
+      link: '/zh-CN/',
       lang: 'zh-CN',
       themeConfig: {
         siteTitle: 'Clickmouse 文档',
@@ -113,6 +120,11 @@ export default defineConfig({
         editLink: {
           pattern: 'https://github.com/xystudiocode/clickmouse_docs/tree/main/docs',
           text: '编辑此页'
+        },
+        notFound: {
+          title: '页面不存在',
+          quote: '只要不改变你的方法，一直寻找，最终会找到你所寻找的目标',
+          linkText: '返回首页',
         },
         // 配置主题
         lightModeSwitchTitle: '切换到浅色模式',
