@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as l,ag as i}from"./chunks/framework.bQujRXpu.js";const _=JSON.parse('{"title":"agent对话模板","description":"","frontmatter":{},"headers":[],"relativePath":"agent.md","filePath":"agent.md"}'),n={name:"agent.md"};function r(o,a,h,d,s,p){return t(),l("div",null,[...a[0]||(a[0]=[i("",7)])])}const m=e(n,[["render",r]]);export{_ as __pageData,m as default};
