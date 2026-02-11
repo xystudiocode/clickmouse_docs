@@ -35,7 +35,7 @@
   --dream-color-darkgray-3: #282828;
   --dream-color-darkgray-soft: rgba(32, 32, 32, 0.3);
 
-  --dream-color-green-1: #058122;
+  --dream-color-green-1: #19c541;
   --dream-color-green-2: #3eeb9d;
   --dream-color-green-3: #95f472;
   --dream-color-green-soft: rgba(59, 196, 111, 0.3);
@@ -95,37 +95,37 @@
   --vp-c-divider: var(--dream-color-white-3);
   --vp-c-gutter: var(--dream-color-white-3);
 
-  --vp-c-tip-1: var(--dream-color-green-1);
+  --vp-c-tip-1: var(--dream-color-black-1);
   --vp-c-tip-2: var(--dream-color-green-2);
   --vp-c-tip-3: var(--dream-color-green-3);
   --vp-c-tip-soft: var(--dream-color-green-soft);
 
-  --vp-c-note-1: var(--dream-color-dodgerblue-1);
+  --vp-c-note-1: var(--dream-color-black-1);
   --vp-c-note-2: var(--dream-color-dodgerblue-2);
   --vp-c-note-3: var(--dream-color-dodgerblue-3);
   --vp-c-note-soft: var(--drean-color-dodgerblue-soft);
 
-  --vp-c-success-1: var(--dream-color-pink-1);
+  --vp-c-success-1: var(--dream-color-black-1);
   --vp-c-success-2: var(--dream-color-pink-2);
   --vp-c-success-3: var(--dream-color-pink-3);
   --vp-c-success-soft: var(--drean-color-pink-soft);
 
-  --vp-c-important-1: var(--dream-color-purple-1);
+  --vp-c-important-1: var(--dream-color-black-1);
   --vp-c-important-2: var(--dream-color-purple-2);
   --vp-c-important-3: var(--dream-color-purple-3);
   --vp-c-important-soft: var(--dream-color-purple-soft);
 
-  --vp-c-warning-1: var(--dream-color-yellow-1);
+  --vp-c-warning-1: var(--dream-color-black-1);
   --vp-c-warning-2: var(--dream-color-yellow-2);
   --vp-c-warning-3: var(--dream-color-yellow-3);
   --vp-c-warning-soft: var(--dream-color-yellow-soft);
 
-  --vp-c-danger-1: var(--dream-color-orange-1);
+  --vp-c-danger-1: var(--dream-color-black-1);
   --vp-c-danger-2: var(--dream-color-orange-2);
   --vp-c-danger-3: var(--dream-color-orange-3);
   --vp-c-danger-soft: var(--dream-color-orange-soft);
 
-  --vp-c-caution-1: var(--dream-color-red-1);
+  --vp-c-caution-1: var(--dream-color-black-1);
   --vp-c-caution-2: var(--dream-color-red-2);
   --vp-c-caution-3: var(--dream-color-red-3);
   --vp-c-caution-soft: var(--dream-color-red-soft);
@@ -154,4 +154,12 @@
   --vp-c-border: var(--dream-color-gray-3);
   --vp-c-divider: var(--dream-color-gray-1);
   --vp-c-gutter: var(--dream-color-gray-2);
+
+  --vp-c-tip-1: var(--dream-color-white-1);
+  --vp-c-note-1: var(--dream-color-white-1);
+  --vp-c-success-1: var(--dream-color-white-1);
+  --vp-c-important-1: var(--dream-color-white-1);
+  --vp-c-warning-1: var(--dream-color-white-1);
+  --vp-c-danger-1: var(--dream-color-white-1);
+  --vp-c-caution-1: var(--dream-color-white-1);
 }
