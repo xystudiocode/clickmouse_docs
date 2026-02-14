@@ -3,6 +3,48 @@ layout: doc
 title: 开始使用
 ---
 
+<style> /* 深浅色主题 */
+.license {
+    content: url('/imgs/install/zh-CN/light/license.png')
+}
+
+.dark .license {
+    content: url('/imgs/install/zh-CN/dark/license.png')
+}
+
+.shortcut {
+    content: url('/imgs/install/zh-CN/light/shortcut.png')
+}
+
+.dark .shortcut {
+    content: url('/imgs/install/zh-CN/dark/shortcut.png')
+}
+
+.compoments {
+    content: url('/imgs/install/zh-CN/light/compoments.png')
+}
+
+.dark .compoments {
+    content: url('/imgs/install/zh-CN/dark/compoments.png')
+}
+
+.finish {
+    content: url('/imgs/install/zh-CN/light/finish.png')
+}
+
+.dark .finish {
+    content: url('/imgs/install/zh-CN/dark/finish.png')
+}
+
+.clickmouse {
+    content: url('/imgs/install/zh-CN/light/clickmouse.png')
+}
+
+.dark .clickmouse {
+    content: url('/imgs/install/zh-CN/dark/clickmouse.png')
+}
+</style>
+
 # 开始使用
 ## 下载安装
 
@@ -15,19 +57,19 @@ title: 开始使用
 点击`解压后的文件夹/main.exe`，同意UAC弹窗，等待程序初始化完成。
 
 先点击下一步，然后"同意此协议"，点击2次"下一步"
-![同意协议](/imgs/install/zh-CN/license.png)
+<img class='license' />
 
 之后会让你选择是否创建快捷方式，建议创建，点击"下一步"
 
-![同意协议](/imgs/install/zh-CN/shortcut.png)
+<img class='shortcut' />
 
-然后是选择包，你可以酌情选择，点击"下一步"
+然后是选择包，你可以酌情选择，点击"下一步"，确认组件选择弹窗。
 
-![选择包](/imgs/install/zh-CN/compoments.png)
+<img class='compoments' />
 
 之后等待安装完成，进入安装完成提示页面，建议勾选"运行clickmouse"，点击"完成"
 
-![完成](/imgs/install/zh-CN/finish.png)
+<img class='finish' />
 
 ### 使用
 
@@ -39,7 +81,7 @@ title: 开始使用
 
 点击"暂停"按钮可以暂停连点，然后你可以点击"重启"按钮继续连点
 
-![clickmouse](/imgs/install/zh-CN/clickmouse.png)
+<img class='clickmouse' />
 
 ::: tip 提示
 之后如果要运行，可以双击`解压后的文件夹/main.exe`运行程序，也可以右键点击桌面或开始菜单快捷方式运行

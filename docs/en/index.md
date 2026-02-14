@@ -1,12 +1,12 @@
 ---
 layout: home
-lang: en-US
+lang: en
 title: Home
-description: Clickmouse documentation made with VitePress.
+description: Clickmouse documentation built with VitePress.
 hero:
   title: Clickmouse
   text: Clickmouse
-  tagline: A fast, simple, lightweight mouse autoclicker made with Python
+  tagline: A fast, simple, lightweight mouse auto-clicker made with Python
   image: 
     src: /imgs/icons/icon.ico
     alt: Clickmouse Logo
@@ -20,37 +20,37 @@ hero:
 features:
   - icon: ⬇️
     title: Rich Clicking Features
-    details: Offers extensive clicking functions, including setting click count, interval, default click properties, hotkey clicking, etc.
+    details: Offers comprehensive clicking features, including customizable click count, interval, default click properties, hotkey clicking, etc.
   - icon: ⚙️
-    title: Abundant Settings
-    details: Can configure theme, default click count and interval; use default values on errors, etc.
+    title: Extensive Settings
+    details: Configurable themes, default click count and interval; fallback to default values on errors, etc.
   - icon: ♻️
     title: Lightweight
-    details: Simple UI, easy to use, and lightweight.
+    details: Clean UI, simple to use, and lightweight.
   - icon: 🔄️
     title: Auto Update
     details: Software auto-updates to ensure you have the latest version.
   - icon: 🖥️
-    title: Background Running
-    details: Can run in the background without interrupting your work; can be woken up or start clicking via hotkeys.
+    title: Background Operation
+    details: Runs in the background without interrupting your work; can be awakened or started via hotkeys.
   - icon: 🧩
     title: Highly Extensible
-    details: The software can be extended by importing extensions for more functionality.
+    details: Supports extensions; import extensions to add more functionality.
   - icon: 💻
     title: Easy Development
-    details: Extension development is simple; just use the clickmouseAPI library to create.
+    details: Extension development is straightforward using the clickmouseAPI library.
   - icon: 
       dark: /imgs/icons/cmd/dark.png
       light: /imgs/icons/cmd/light.png
     title: Command Line & CLI
-    details: Supports more lightweight command line and CLI modes, easily callable by other software.
+    details: Supports lightweight command line and CLI modes, easily callable by other software.
   - icon: 🎀
     title: Installation Assistant
-    details: The official installation assistant makes it easy to configure clickmouse and package manager, simplifying your operations.
+    details: The official installation assistant simplifies configuring clickmouse and package manager, making operations easier.
   - icon: 📦
     title: Package Manager
-    details: Officially supports a package manager for easy installation, uninstallation, and updating of extensions.
+    details: Officially supports package manager for easy installation, uninstallation, and updating of extensions.
   - icon: 🔛
     title: Open Source
-    details: This software is open source under the MIT license. You can modify, distribute, use, or even charge for it. You can also suggest improvements to the clickmouse team. Source code：https://github.com/xystudiocode/pyclickmouse.
+    details: This software is open source under the MIT license. You can modify, distribute, use, or even charge for it; you can also suggest improvements to the clickmouse official team.
 ---

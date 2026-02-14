@@ -15,7 +15,7 @@
                      'en-US';
   
   // 跳转到对应语言目录
-  onMounted(() => {
+  onMounted(() => {;
     window.location.href = `/clickmouse_docs/${targetLang}/`;
   });
 </script>
