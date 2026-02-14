@@ -6,6 +6,6 @@ title: Clickmouse Guide
 # Clickmouse Guide
 
 ## Introduction
-Clickmouse Guide, mainly introduces the usage, features, principles, configuration, etc. of Clickmouse GUI.
+The Clickmouse Guide mainly introduces the usage methods, features, principles, configuration, etc., of the Clickmouse GUI.
 
 Click the sidebar to browse.

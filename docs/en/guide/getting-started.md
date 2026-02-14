@@ -3,44 +3,86 @@ layout: doc
 title: Getting Started
 ---
 
+<style> /* Light and dark theme */
+.license {
+    content: url('/imgs/install/en/light/license.png')
+}
+
+.dark .license {
+    content: url('/imgs/install/en/dark/license.png')
+}
+
+.shortcut {
+    content: url('/imgs/install/en/light/shortcut.png')
+}
+
+.dark .shortcut {
+    content: url('/imgs/install/en/dark/shortcut.png')
+}
+
+.compoments {
+    content: url('/imgs/install/en/light/compoments.png')
+}
+
+.dark .compoments {
+    content: url('/imgs/install/en/dark/compoments.png')
+}
+
+.finish {
+    content: url('/imgs/install/en/light/finish.png')
+}
+
+.dark .finish {
+    content: url('/imgs/install/en/dark/finish.png')
+}
+
+.clickmouse {
+    content: url('/imgs/install/en/light/clickmouse.png')
+}
+
+.dark .clickmouse {
+    content: url('/imgs/install/en/dark/clickmouse.png')
+}
+</style>
+
 # Getting Started
-## Download & Install
+## Download and Installation
 
 Go to the [GitHub releases page](https://github.com/xystudiocode/pyclickmouse/releases/latest)
 
-Select `clickmouse.7z`, download it, then extract to the current directory.
+Select `clickmouse.7z`, then download it. After downloading, extract it to the current directory.
 
-## Run
+## Running
 ### Initialization
-Click `extracted_folder/main.exe`, agree to the UAC prompt, and wait for program initialization to complete.
+Click `extracted_folder/main.exe`, agree to the UAC prompt, and wait for the program to initialize.
 
-First click Next, then "Agree to this license", click "Next" twice.
-![Agree to License](/imgs/install/en/license.png)
+First click Next, then "Agree to this agreement", click "Next" twice
+<img class='license' />
 
-Then you will be asked whether to create shortcuts. It is recommended to create them. Click "Next".
+Next, you'll be asked whether to create a shortcut. It is recommended to create one. Click "Next"
 
-![Agree to License](/imgs/install/en/shortcut.png)
+<img class='shortcut' />
 
-Next, select packages as needed. Click "Next".
+Then select packages. You can choose as needed. Click "Next" and confirm the component selection prompt.
 
-![Select Packages](/imgs/install/en/compoments.png)
+<img class='compoments' />
 
-Wait for installation to finish, then you'll see the completion page. It's recommended to check "Run clickmouse" and click "Finish".
+Wait for the installation to complete, then proceed to the installation completion prompt page. It is recommended to check "Run clickmouse", then click "Finish"
 
-![Finish](/imgs/install/en/finish.png)
+<img class='finish' />
 
 ### Usage
 
 Set a click interval and click count. The button next to the click input box can set the unit.
 
-After setting, click the "Left Click" or "Right Click" button to start clicking.
+After setting, click the "Left Click" or "Right Click" button to start auto-clicking.
 
-Click the "Stop" button to stop clicking.
+Click the "Stop" button to stop auto-clicking.
 
-Click the "Pause" button to pause clicking, then you can click the "Restart" button to resume.
+Click the "Pause" button to pause auto-clicking. You can then click the "Restart" button to resume.
 
-![clickmouse](/imgs/install/en/clickmouse.png)
+<img class='clickmouse' />
 
 ::: tip Tip
-To run later, you can double-click `extracted_folder/main.exe` or right-click the desktop/Start menu shortcut to run.
+To run later, you can double-click `extracted_folder/main.exe` or right-click the desktop or Start menu shortcut to run.
 :::

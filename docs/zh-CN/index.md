@@ -52,5 +52,5 @@ features:
     details: 软件官方支持包管理器，可以简单的安装、卸载、更新扩展。
   - icon: 🔛
     title: 开源
-    details: 本软件使用mit协议开源，你可以任意修改，分发，使用，甚至收费；你也可以向clickmouse官方提出建议，帮助改进软件。clickmouse源码:https://github.com/xystudiocode/pyclickmouse。
+    details: 本软件使用mit协议开源，你可以任意修改，分发，使用，甚至收费；你也可以向clickmouse官方提出建议，帮助改进软件。
 ---
