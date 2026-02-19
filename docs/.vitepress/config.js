@@ -119,6 +119,10 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.1.3.18',
+                          link: '/en/updatelog/final/3/31318.html',
+                        },
+                        {
                           text: '3.1.2.17',
                           link: '/en/updatelog/final/3/31217.html',
                         },
@@ -214,6 +218,14 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19beta10',
+                          link: '/en/updatelog/beta/3/32019b10.html',
+                        },
+                        {
+                          text: '3.2.0.19beta9',
+                          link: '/en/updatelog/beta/3/32019b9.html',
+                        },
                         {
                           text: '3.2.0.18beta8',
                           link: '/en/updatelog/beta/3/32018b8.html',
@@ -389,6 +401,10 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.1.3.18',
+                          link: '/zh-CN/updatelog/final/3/31318.html',
+                        },
+                        {
                           text: '3.1.2.17',
                           link: '/zh-CN/updatelog/final/3/31217.html',
                         },
@@ -484,6 +500,14 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19beta10',
+                          link: '/zh-CN/updatelog/beta/3/32019b10.html',
+                        },
+                        {
+                          text: '3.2.0.19beta9',
+                          link: '/zh-CN/updatelog/beta/3/32019b9.html',
+                        },
                         {
                           text: '3.2.0.18beta8',
                           link: '/zh-CN/updatelog/beta/3/32018b8.html',
