@@ -219,6 +219,10 @@ export default defineConfig({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.0.19beta11',
+                          link: '/en/updatelog/beta/3/32019b11.html',
+                        },
+                        {
                           text: '3.2.0.19beta10',
                           link: '/en/updatelog/beta/3/32019b10.html',
                         },
@@ -500,6 +504,10 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19beta11',
+                          link: '/zh-CN/updatelog/beta/3/32019b11.html',
+                        },
                         {
                           text: '3.2.0.19beta10',
                           link: '/zh-CN/updatelog/beta/3/32019b10.html',
