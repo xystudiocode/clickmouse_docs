@@ -108,10 +108,10 @@ export default defineConfig({
           ],
           '/en/updatelog/': [
             {
-              text: '发行日志',
+              text: 'Update log',
               items: [
                 {
-                  text: '正式版',
+                  text: 'Final',
                   collapsed: true,
                   items: [
                     {
@@ -211,13 +211,17 @@ export default defineConfig({
                   ],
                 },
                 {
-                  text: '预览版',
+                  text: 'Preview',
                   collapsed: true,
                   items: [
                     {
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19rc2',
+                          link: '/en/updatelog/preview/3/32019rc2.html',
+                        },
                         {
                           text: '3.2.0.19rc1',
                           link: '/en/updatelog/beta/3/32019rc1.html',
@@ -508,6 +512,10 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19rc2',
+                          link: '/zh-CN/updatelog/preview/3/32019rc2.html',
+                        },
                         {
                           text: '3.2.0.19rc1',
                           link: '/zh-CN/updatelog/beta/3/32019rc1.html',
