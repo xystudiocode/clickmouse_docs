@@ -5,7 +5,7 @@ layout: doc
 ---
 
 <script setup>
-import caution from '@theme/components/Caution.vue'
+import caution from '@theme/components/caution.vue'
 </script>
 
 # Participating in Collaboration
@@ -105,7 +105,7 @@ B --> C(main branch)
 pr no specific format, but must clearly describe update content, associate to version number milestone; title need briefly describe update content, if fixed or added suggestions in issue, write that issue number in this line, if multiple duplicate issues appear, only write one, and simply describe this bug.
 
 ### Express pr
-<caution title="Warning">
+<caution title="Caution">
 Express pr please use carefully
 </caution>
 
