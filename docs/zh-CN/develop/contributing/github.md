@@ -5,7 +5,7 @@ layout: doc
 ---
 
 <script setup>
-import caution from '@theme/components/Caution.vue'
+import caution from '@theme/components/caution.vue'
 </script>
 
 # 参与协作

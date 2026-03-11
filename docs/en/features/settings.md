@@ -334,7 +334,7 @@ Setting items include:
 - - Type: Switch
 - - Default value: On
 - - Field name: `update_enabled`
-<caution title='Warning'>
+<caution title='Caution'>
 I do not recommend turning off updates, this will cause more problems for your clickmouse.
 </caution>
 
@@ -476,7 +476,7 @@ Setting items include:
 - - Type: Switch
 - - Default value: On
 - - Field name: `update_enabled`
-<caution title='Warning'>
+<caution title='Caution'>
 I do not recommend turning off updates, this will cause more problems for your clickmouse.
 </caution>
 
