@@ -1,6 +1,6 @@
-import { defineConfig } from 'vitepress';
+import { withMermaid } from "vitepress-plugin-mermaid";
 
-export default defineConfig({
+export default withMermaid({
   base: '/clickmouse_docs/',
   head: [['link', { rel: 'icon', href: '/imgs/icons/icon.ico' }]],
   markdown: {
@@ -96,13 +96,12 @@ export default defineConfig({
           '/en/guide/': [
             {
               text: 'Guide',
-              collapsible: true,
               items: [
                 { text: 'Introduction', link: '/en/guide/' },
-                {
-                  text: 'Getting Started',
-                  link: '/en/guide/getting-started.html',
-                },
+                { text: 'Getting Started', link: '/en/guide/getting-started.html' },
+                { text: 'FAQ', link: '/en/guide/faq.html',},
+                { text: 'Version Naming', link: '/en/guide/version-naming.html',},
+                { text: 'License', link: '/en/guide/license.html',},
               ],
             },
           ],
@@ -118,6 +117,10 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19',
+                          link: '/en/updatelog/final/3/32019.html',
+                        },
                         {
                           text: '3.1.3.18',
                           link: '/en/updatelog/final/3/31318.html',
@@ -218,6 +221,18 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.1.20alpha2',
+                          link: '/en/updatelog/preview/3/32120a2.html',
+                        },
+                        {
+                          text: '3.2.1.20alpha1',
+                          link: '/en/updatelog/preview/3/32120a1.html',
+                        },
+                        {
+                          text: '3.2.0.19rc3',
+                          link: '/en/updatelog/preview/3/32019rc3.html',
+                        },
                         {
                           text: '3.2.0.19rc2',
                           link: '/en/updatelog/preview/3/32019rc2.html',
@@ -323,24 +338,102 @@ export default defineConfig({
               items: [
                 {
                   text: 'Introduction',
-                  link: '/en/features/'
+                  link: '/en/features/',
+                },
+                {
+                  text: 'Clean cache',
+                  link: '/en/features/cleancache.html',
+                },
+                {
+                  text: 'Settings',
+                  link: '/en/features/settings.html',
+                },
+                {
+                  text: 'Update',
+                  link: '/en/features/update.html',
+                },
+                {
+                  text: 'Help',
+                  link: '/en/features/help.html',
                 },
                 {
                   text: 'Extensions',
                   collapsed: true,
+                  items: [{ text: 'Introducing', link: '/en/features/extensions' }, { text: 'Repair', link: '/en/features/extensions/repair' }],
+                },
+              ],
+            },
+          ],
+          '/en/develop': [
+            {
+            text: 'Developers',
+            items: [
+              {
+                text: 'Introduction',
+                link: '/en/develop/index.html',
+              },
+              {
+                text: 'Dependencies',
+                link: '/en/develop/dependencies.html',
+              },
+              {
+                  text: 'Clickmouse library usage',
+                  collapsed: true,
                   items: [
-                    {text: 'Introduction', link: '/en/features/extensions'}
-                  ]
-                }
-              ]
-            }
-          ]
+                    {
+                      text: 'Introduction',
+                      link: '/en/develop/clicker/index.html',
+                    },
+                    {
+                      text: 'Calling using Python/pyd',
+                      link: '/en/develop/clicker/python.html',
+                    },
+                    {
+                      text: 'Calling using C++/dll',
+                      link: '/en/develop/clicker/cpp.html',
+                    }
+                  ],
+                },
+                {
+                  text: 'Contributing',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Contributing clickmouse',
+                      link: '/en/develop/contributing/github.html',
+                    },
+                    {
+                      text: 'Configuration development environment',
+                      link: '/en/develop/contributing/configuration.html',
+                    },
+                    {
+                      text: 'Documentation development',
+                      link: '/en/develop/contributing/doc.html',
+                    },
+                    {
+                      text: 'Issue template',
+                      link: '/en/develop/contributing/issue_template.html'
+                    },
+                    {
+                      text: 'Security policy',
+                      link: '/en/develop/contributing/security.html'
+                    },
+                    {
+                      text: 'License',
+                      link: '/en/develop/contributing/license.html'
+                    }
+                  ],
+                },
+              ],
+            },
+          ],
         },
         nav: [
           { text: 'Home', link: '/en/' },
           { text: 'Guide', link: '/en/guide/' },
           { text: 'Features', link: '/en/features/' },
           { text: 'Update log', link: '/en/updatelog/' },
+          { text: 'Developers', link: '/en/develop/'}
         ],
         returnToTopLabel: 'Return to top',
       },
@@ -381,6 +474,7 @@ export default defineConfig({
           { text: '指南', link: '/zh-CN/guide/' },
           { text: '功能', link: '/zh-CN/features/' },
           { text: '更新日志', link: '/zh-CN/updatelog/' },
+          { text: '开发者', link: '/zh-CN/develop/' }
         ],
         docFooter: {
           prev: '上一页',
@@ -397,6 +491,9 @@ export default defineConfig({
               items: [
                 { text: '介绍', link: '/zh-CN/guide/' },
                 { text: '开始使用', link: '/zh-CN/guide/getting-started.html' },
+                { text: 'FAQ', link: '/zh-CN/guide/faq.html',},
+                { text: '版本命名', link: '/zh-CN/guide/version-naming.html',},
+                { text: '用户协议', link: '/zh-CN/guide/license.html',},
               ],
             },
           ],
@@ -412,6 +509,10 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.0.19',
+                          link: '/zh-CN/updatelog/final/3/32019.html',
+                        },
                         {
                           text: '3.1.3.18',
                           link: '/zh-CN/updatelog/final/3/31318.html',
@@ -512,6 +613,18 @@ export default defineConfig({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.1.20alpha2',
+                          link: '/en/updatelog/preview/3/32120a2.html',
+                        },
+                        {
+                          text: '3.2.1.20alpha1',
+                          link: '/en/updatelog/preview/3/32120a1.html',
+                        },
+                        {
+                          text: '3.2.0.19rc3',
+                          link: '/en/updatelog/preview/3/32019rc3.html',
+                        },
                         {
                           text: '3.2.0.19rc2',
                           link: '/zh-CN/updatelog/preview/3/32019rc2.html',
@@ -617,18 +730,94 @@ export default defineConfig({
               items: [
                 {
                   text: '介绍',
-                  link: '/zh-CN/features/'
+                  link: '/zh-CN/features/',
+                },
+                {
+                  text: '清理缓存',
+                  link: '/zh-CN/features/cleancache.html',
+                },
+                {
+                  text: '设置',
+                  link: '/zh-CN/features/settings.html',
+                },
+                {
+                  text: '更新',
+                  link: '/zh-CN/features/update.html',
+                },
+                {
+                  text: '帮助',
+                  link: '/zh-CN/features/help.html',
                 },
                 {
                   text: '扩展',
                   collapsed: true,
+                  items: [{ text: '介绍', link: '/zh-CN/features/extensions' }],
+                },
+              ],
+            },
+          ],
+          '/zh-CN/develop': [
+            {
+            text: '开发人员',
+            items: [
+              {
+                text: '介绍',
+                link: '/zh-CN/develop/index.html',
+              },
+              {
+                text: '依赖',
+                link: '/zh-CN/develop/dependencies.html',
+              },
+              {
+                  text: 'clickmouse库调用',
+                  collapsed: true,
                   items: [
-                    {text: '介绍', link: '/zh-CN/features/extensions'}
-                  ]
-                }
-              ]
-            }
-          ]
+                    {
+                      text: '介绍',
+                      link: '/zh-CN/develop/clicker/index.html',
+                    },
+                    {
+                      text: '基于python/pyd的调用',
+                      link: '/zh-CN/develop/clicker/python.html',
+                    },
+                    {
+                      text: '基于C++/dll的调用',
+                      link: '/zh-CN/develop/clicker/cpp.html',
+                    }
+                  ],
+                },
+                {
+                  text: '参与协作',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: '协作clickmouse',
+                      link: '/zh-CN/develop/contributing/github.html',
+                    },
+                    {
+                      text: '配置开发环境',
+                      link: '/zh-CN/develop/contributing/configuration.html',
+                    },
+                    {
+                      text: '文档协作',
+                      link: '/zh-CN/develop/contributing/doc.html',
+                    },
+                    {
+                      text: 'issue 模板',
+                      link: '/zh-CN/develop/contributing/issue_template.html'
+                    },{
+                      text: '安全报告',
+                      link: '/zh-CN/develop/contributing/security.html'
+                    },
+                    {
+                      text: '软件协议',
+                      link: '/zh-CN/develop/contributing/license.html'
+                    }
+                  ],
+                },
+              ],
+            },
+          ],
         },
       },
     },

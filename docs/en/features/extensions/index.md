@@ -1,12 +1,12 @@
 ---
 title: Extensions
-description: Features of clickmouse
+description: clickmouse features
 layout: doc
 ---
 
 # Features
 
-Clickmouse provides strong extensibility, but currently we are developing the extension API, so only official components are available for now.
+clickmouse provides powerful extensibility, but currently we are making extension api, so extensions are temporarily only official components.
 
 Official extension list:
-- Repair Tool: One-click fix for mouse clicker startup issues, can also restore to the initial downloaded state, and remove components without requiring internet reinstallation.
+- Repair Tool: One-click repair mouse clicker startup issues, can also restore to just downloaded state, and through removing components, no need for online reinstallation.
