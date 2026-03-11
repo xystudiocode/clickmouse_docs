@@ -8,16 +8,14 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },
-  "keywords": [
-    "documentation",
-    "vitepress",
-    "clickmouse",
-    "docs"
-  ],
   "author": "xystudio",
   "license": "MIT",
   "devDependencies": {
+    "mermaid": "^11.12.3",
     "vitepress": "^1.0.0-rc.32",
-    "vue": "^3.3.0"
+    "vitepress-plugin-mermaid": "^2.0.17"
+  },
+  "dependencies": {
+    "marked": "^17.0.4"
   }
 }

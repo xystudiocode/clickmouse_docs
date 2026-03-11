@@ -6,6 +6,31 @@ title: Clickmouse Guide
 # Clickmouse Guide
 
 ## Introduction
-The Clickmouse Guide mainly introduces the usage methods, features, principles, configuration, etc., of the Clickmouse GUI.
+Clickmouse guide, mainly introducing the usage methods, features, principles, configurations, etc., of Clickmouse GUI.
 
-Click the sidebar to browse.
+Click on the sidebar to browse.
+
+## Features
+- Clicking functionality
+- Input interval
+- Hotkey startup
+- Input count
+- Automatic update check
+- Automatic download and installation of updates
+- Settings
+- Official installation assistant
+- Package management
+- Background operation
+
+## Clicking Features
+- Mouse auto-clicking
+- Custom click interval
+- Custom click count
+
+## ⬇️Download
+Go to [releases](https://github.com/xystudio889/pyClickMouse/releases) to download
+
+## Usage Priority
+```mermaid
+graph LR
+A[exe] --> B["cli version (not completed)"]

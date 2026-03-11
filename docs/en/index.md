@@ -20,37 +20,37 @@ hero:
 features:
   - icon: ⬇️
     title: Rich Clicking Features
-    details: Offers comprehensive clicking features, including customizable click count, interval, default click properties, hotkey clicking, etc.
+    details: Offers extensive clicking capabilities, including setting click count, interval time, default click properties, hotkey clicking, etc.
   - icon: ⚙️
-    title: Extensive Settings
-    details: Configurable themes, default click count and interval; fallback to default values on errors, etc.
+    title: Abundant Settings
+    details: Can configure theme, default click count and interval; use default values on errors, etc.
   - icon: ♻️
     title: Lightweight
-    details: Clean UI, simple to use, and lightweight.
+    details: Clean UI, simple and lightweight to use.
   - icon: 🔄️
     title: Auto Update
-    details: Software auto-updates to ensure you have the latest version.
+    details: Software automatically updates to ensure you have the latest version.
   - icon: 🖥️
     title: Background Operation
-    details: Runs in the background without interrupting your work; can be awakened or started via hotkeys.
+    details: Software can run in the background without affecting your work; can be awakened or start clicking using hotkeys.
   - icon: 🧩
-    title: Highly Extensible
-    details: Supports extensions; import extensions to add more functionality.
+    title: High Extensibility
+    details: Software can be extended by importing extensions to achieve more functionality.
   - icon: 💻
     title: Easy Development
-    details: Extension development is straightforward using the clickmouseAPI library.
+    details: Extension development is simple, only requiring the use of the clickmouseAPI library.
   - icon: 
       dark: /imgs/icons/cmd/dark.png
       light: /imgs/icons/cmd/light.png
-    title: Command Line & CLI
-    details: Supports lightweight command line and CLI modes, easily callable by other software.
+    title: Command Line and CLI
+    details: Software supports more lightweight command line and CLI modes, easily callable by other software.
   - icon: 🎀
     title: Installation Assistant
-    details: The official installation assistant simplifies configuring clickmouse and package manager, making operations easier.
+    details: The official installation assistant makes it easy to configure clickmouse and package manager, simplifying your operations.
   - icon: 📦
     title: Package Manager
-    details: Officially supports package manager for easy installation, uninstallation, and updating of extensions.
+    details: Software officially supports package manager for easy installation, uninstallation, and updating of extensions.
   - icon: 🔛
     title: Open Source
-    details: This software is open source under the MIT license. You can modify, distribute, use, or even charge for it; you can also suggest improvements to the clickmouse official team.
+    details: This software is open source under the MIT license, allowing you to freely modify, distribute, use, and even charge for it; you can also make suggestions to the clickmouse official team to help improve the software.
 ---
