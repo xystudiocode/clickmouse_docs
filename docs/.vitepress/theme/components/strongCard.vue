@@ -296,6 +296,18 @@ defineProps({
     user-select: none;
 }
 
+.text-highlight {
+    margin-right: 8px;
+}
+
+.fastkey {
+    background-color: #1d732e;
+    font-weight: 400;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    padding: 2px 2px;
+}
+
 .dark .button {
     background-color: #212830;
     border-color: #3d444d;
@@ -318,29 +330,16 @@ defineProps({
     background-color: #e6eaef;
 }
 
-.button-highlight {
-    border-color: #449854 !important;
-    background-color: #238636 !important;
+.button-highlight, .dark .button-highlight {
+    border-color: #449854;
+    background-color: #238636;
     color: #f0f6fc;
 }
 
-.text-highlight {
-    margin-right: 8px;
-}
-
-.fastkey {
-    background-color: #1d732e;
-    font-weight: 400;
-    font-size: 0.75rem;
-    border-radius: 4px;
-    padding: 2px 2px;
-}
-
-.button-highlight:hover {
+.button-highlight:hover, .dark .button-highlight:hover {
     background-color: #29903b;
 }
-
-.button-highlight:active {
+.button-highlight:active, .dark .button-highlight:active {
     background-color: #2e9a40;
 }
 
