@@ -221,6 +221,11 @@ If custom language pack is not updated in time, lacking translation for new cont
 - - Interval value: 10ms
 - - Field name: `soft_delay`
 
+- Hide "lab" tab when no experimental features: If checked, "lab" tab will be hidden when no experimental features.
+- - Type: Switch
+- - Default value: On
+- - Field name: `hide_flags`
+
 - Reset All Settings: Used to restore default settings, after restoration need to restart software to take effect.
 - - Type: Button
 

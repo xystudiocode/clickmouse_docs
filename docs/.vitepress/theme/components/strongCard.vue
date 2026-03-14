@@ -5,9 +5,9 @@
             <div class="roundCard notActive">
                 <svg
                     class="svg"
-                    viewBox="0 -5 24 24"
-                    width="24"
-                    height="24"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
                     fill="currentColor"
                 >
                     <path
@@ -18,26 +18,27 @@
             </div>
             <div class="roundCard">
                 {{ LangPack.LabelDesc ?? 'Label' }}
+                <!-- 统一高度为16，调整圆点位置使其完整显示 -->
                 <svg
-                    viewBox="-3 -12 16 16"
+                    viewBox="0 0 16 16"
                     width="16"
-                    height="20"
+                    height="16"
                     :fill="LabelColor"
                 >
-                    <circle cx="5" cy="0" r="5"></circle>
+                    <circle cx="8" cy="8" r="5"></circle>
                 </svg>
                 <b>{{ LangPack.Label ?? 'None' }}</b>
             </div>
             <div class="roundCard">
-                {{ LangPack.TypeDesc ?? 'Type' }}
+                Type
                 <svg
                     class="svg"
-                    viewBox="-3 -12 16 16"
+                    viewBox="0 0 16 16"
                     width="16"
-                    height="20"
+                    height="16"
                     :fill="TypeColor"
                 >
-                    <circle cx="5" cy="0" r="5"></circle>
+                    <circle cx="8" cy="8" r="5"></circle>
                 </svg>
                 <b>{{ LangPack.Type ?? 'None' }}</b>
             </div>
@@ -45,9 +46,9 @@
             <div class="roundCard notActive">
                 <svg
                     class="svg"
-                    viewBox="0 -5 24 24"
-                    width="24"
-                    height="24"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
                     fill="currentColor"
                 >
                     <path
@@ -59,9 +60,9 @@
             <div class="roundCard notActive">
                 <svg
                     class="svg"
-                    viewBox="0 -5 24 24"
-                    width="24"
-                    height="24"
+                    viewBox="0 0 16 16"
+                    width="16"
+                    height="16"
                     fill="currentColor"
                 >
                     <path
@@ -78,7 +79,10 @@
                 ></path>
             </svg>
             <span>
-                {{ LangPack.Product ?? 'Remember, contributions to this repository should follow its' }}
+                {{
+                    LangPack.Product ??
+                    'Remember, contributions to this repository should follow its'
+                }}
                 <a
                     href="https://github.com/xystudiocode/pyClickMouse/blob/main/CONTRIBUTING.md"
                     >{{ LangPack.Guidelines ?? 'contributing guidelines' }}</a
@@ -96,14 +100,18 @@
                 {{ LangPack.CreateMore ?? 'Create more' }}
             </div>
             <div class="buttons">
-                <div class="button"><span class="text">{{ LangPack.Cancel ?? 'Cancel' }}</span></div>
+                <div class="button">
+                    <span class="text">{{ LangPack.Cancel ?? 'Cancel' }}</span>
+                </div>
                 <div
                     class="button button-highlight"
                     :class="{ hovered: isHovered }"
                     @mouseenter="isHovered = true"
                     @mouseleave="isHovered = false"
                 >
-                    <span class="text text-highlight">{{ LangPack.Create ?? 'Create' }}</span>
+                    <span class="text text-highlight">{{
+                        LangPack.Create ?? 'Create'
+                    }}</span>
                     <span class="fastkey" :class="{ hovered: isHovered }">
                         ^⏎
                     </span>
@@ -130,8 +138,8 @@ defineProps({
     },
     LangPack: {
         type: Object,
-        default: {}
-    }
+        default: {},
+    },
 });
 </script>
 
@@ -157,7 +165,6 @@ defineProps({
 }
 
 .divider {
-    margin-top: 25px;
     width: 1px;
     padding: 10px 0;
     border-left: 1px solid #d1d9e0;
@@ -169,19 +176,22 @@ defineProps({
 
 .roundCardRow {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     user-select: none;
+    margin-top: 1.5rem;
 }
 
 .roundCard {
     display: flex;
-    margin-top: 1.5rem;
+    align-items: center;
     border-radius: 0.375rem;
     border: 0.8px solid #d1d9e0;
-    padding: 0 8px;
-    line-height: 2;
+    padding: 5px 8px;
     width: auto;
     gap: 0.25rem;
+    color: #59636e;
+    background-color: #f6f8fa;
 }
 
 .notActive {
@@ -195,11 +205,6 @@ defineProps({
 
 .notActive .svg {
     margin-right: 4px;
-}
-
-.roundCard {
-    color: #59636e;
-    background-color: #f6f8fa;
 }
 
 .roundCard:hover {
@@ -330,16 +335,19 @@ defineProps({
     background-color: #e6eaef;
 }
 
-.button-highlight, .dark .button-highlight {
+.button-highlight,
+.dark .button-highlight {
     border-color: #449854;
     background-color: #238636;
     color: #f0f6fc;
 }
 
-.button-highlight:hover, .dark .button-highlight:hover {
+.button-highlight:hover,
+.dark .button-highlight:hover {
     background-color: #29903b;
 }
-.button-highlight:active, .dark .button-highlight:active {
+.button-highlight:active,
+.dark .button-highlight:active {
     background-color: #2e9a40;
 }
 
