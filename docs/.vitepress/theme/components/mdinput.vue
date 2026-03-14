@@ -478,7 +478,7 @@ export default {
       });
     },
 
-    // 任务列表：根据选区生成三行，第二行为 '- [] 内容'，光标位于内容后
+    // 任务列表：根据选区生成三行，第二行为 '- [ ] 内容'，光标位于内容后
     handleTaskList() {
       const ta = this.$refs.textarea;
       if (!ta) return;
@@ -491,12 +491,12 @@ export default {
 
       // 构建插入内容：无论有无选区，都产生三行，第二行是任务标记 + 内容
       // 如果无选区，selected = ''，则生成空任务项
-      const insert = '\n- [] ' + selected + '\n';
+      const insert = '\n- [ ] ' + selected + '\n';
       this.markdownText = left + insert + right;
       this.$nextTick(() => {
         ta.focus();
-        // 光标放在内容后面（即 left + '\n- [] ' 之后 + 内容长度）
-        const prefix = left + '\n- [] ';
+        // 光标放在内容后面（即 left + '\n- [ ] ' 之后 + 内容长度）
+        const prefix = left + '\n- [ ] ';
         const pos = prefix.length + selected.length;
         ta.setSelectionRange(pos, pos);
       });

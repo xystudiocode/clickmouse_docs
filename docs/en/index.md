@@ -12,6 +12,9 @@ hero:
     alt: Clickmouse Logo
   actions:
     - theme: brand
+      text: Download
+      link: https://github.com/xystudiocode/pyclickmouse/releases/latest
+    - theme: brand
       text: Get Started
       link: /en/guide/getting-started.html
     - theme: alt

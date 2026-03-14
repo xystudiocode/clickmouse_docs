@@ -223,19 +223,19 @@ export default withMermaid({
                       items: [
                         {
                           text: '3.2.1.20alpha2',
-                          link: '/en/updatelog/preview/3/32120a2.html',
+                          link: '/en/updatelog/beta/3/32120a2.html',
                         },
                         {
                           text: '3.2.1.20alpha1',
-                          link: '/en/updatelog/preview/3/32120a1.html',
+                          link: '/en/updatelog/beta/3/32120a1.html',
                         },
                         {
                           text: '3.2.0.19rc3',
-                          link: '/en/updatelog/preview/3/32019rc3.html',
+                          link: '/en/updatelog/beta/3/32019rc3.html',
                         },
                         {
                           text: '3.2.0.19rc2',
-                          link: '/en/updatelog/preview/3/32019rc2.html',
+                          link: '/en/updatelog/beta/3/32019rc2.html',
                         },
                         {
                           text: '3.2.0.19rc1',
@@ -615,19 +615,19 @@ export default withMermaid({
                       items: [
                         {
                           text: '3.2.1.20alpha2',
-                          link: '/en/updatelog/preview/3/32120a2.html',
+                          link: '/en/updatelog/beta/3/32120a2.html',
                         },
                         {
                           text: '3.2.1.20alpha1',
-                          link: '/en/updatelog/preview/3/32120a1.html',
+                          link: '/en/updatelog/beta/3/32120a1.html',
                         },
                         {
                           text: '3.2.0.19rc3',
-                          link: '/en/updatelog/preview/3/32019rc3.html',
+                          link: '/en/updatelog/beta/3/32019rc3.html',
                         },
                         {
                           text: '3.2.0.19rc2',
-                          link: '/zh-CN/updatelog/preview/3/32019rc2.html',
+                          link: '/zh-CN/updatelog/beta/3/32019rc2.html',
                         },
                         {
                           text: '3.2.0.19rc1',
