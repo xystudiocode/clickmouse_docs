@@ -30,7 +30,7 @@
                 <b>{{ LangPack.Label ?? 'None' }}</b>
             </div>
             <div class="roundCard">
-                Type
+                {{ LangPack.TypeDesc ?? 'Label' }}
                 <svg
                     class="svg"
                     viewBox="0 0 16 16"
