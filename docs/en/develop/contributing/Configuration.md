@@ -29,6 +29,7 @@ pip install -r requirements.txt
 ```powershell
 make clickmouse # compile clickmouse
 make extension # compile extension
+make clickclean # if you want to make clean version, please run this command
 ```
 7. Run `dist/clickmouse/main.exe` to load clickmouse.
 ## Header Files

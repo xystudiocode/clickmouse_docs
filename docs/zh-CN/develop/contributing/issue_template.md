@@ -46,6 +46,7 @@ export default {
         { value: 'Clean',label: '♻️清理缓存' },
         { value: 'Theme/Style',label: '🏳️‍🌈主题/样式' },
         { value: 'Document',label: '📄文档' },
+        { value: 'clickClean',label: '🟦clickClean'},
         { value: 'Unknown',label: '❓其他/未知' },
       ],
       idea_text: '- 解决方案1：\n- 1. 解决步骤1\n- 2. 解决步骤2\n- 3. 解决步骤3\n- 4. 解决步骤...\n- 解决方案2：\n- 1. 解决步骤1\n- 2. 解决步骤2\n- 3. 解决步骤3\n- 4. 解决步骤...\n- 解决方案3：\n- 1. 解决步骤1\n- 2. 解决步骤2\n- 3. 解决步骤3\n- 4. 解决步骤...\n- 解决方案...',

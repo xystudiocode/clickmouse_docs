@@ -45,6 +45,7 @@ export default {
         { value: 'Clean',label: '♻️Clean cache' },
         { value: 'Theme/Style',label: '🏳️‍🌈Theme/Style' },
         { value: 'Document',label: '📄Documentation' },
+        { value: 'clickClean',label: '🟦clickClean'},
         { value: 'Unknown',label: '❓Other/Unknown' },
       ],
       idea_text: '- Solution 1:\n- 1. Solution step 1\n- 2. Solution step 2\n- 3. Solution step 3\n- 4. Solution step ...\n- Solution 2:\n- 1. Solution step 1\n- 2. Solution step 2\n- 3. Solution step 3\n- 4. Solution step ...\n- Solution 3:\n- 1. Solution step 1\n- 2. Solution step 2\n- 3. Solution step 3\n- 4. Solution step ...\n- Solution ...',
