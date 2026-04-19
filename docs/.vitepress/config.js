@@ -118,6 +118,10 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.1.20',
+                          link: '/en/updatelog/final/3/32120.html',
+                        },
+                        {
                           text: '3.2.0.19',
                           link: '/en/updatelog/final/3/32019.html',
                         },
@@ -357,6 +361,10 @@ export default withMermaid({
                   link: '/en/features/help.html',
                 },
                 {
+                  text: 'clickclean',
+                  link: '/en/features/clickclean.html',
+                },
+                {
                   text: 'Extensions',
                   collapsed: true,
                   items: [{ text: 'Introducing', link: '/en/features/extensions' }, { text: 'Repair', link: '/en/features/extensions/repair' }],
@@ -509,6 +517,10 @@ export default withMermaid({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.2.1.20',
+                          link: '/zh-CN/updatelog/final/3/32120.html'
+                        },
                         {
                           text: '3.2.0.19',
                           link: '/zh-CN/updatelog/final/3/32019.html',
@@ -747,6 +759,10 @@ export default withMermaid({
                 {
                   text: '帮助',
                   link: '/zh-CN/features/help.html',
+                },
+                {
+                  text: 'clickclean',
+                  link: '/zh-CN/features/clickclean.html',
                 },
                 {
                   text: '扩展',

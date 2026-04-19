@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 下载软件
-      link: https://github.com/xystudiocode/pyclickmouse/releases/latest
+      link: https://github.com/xystudiocode/pyClickMouse/releases/releases/latest
     - theme: brand
       text: 开始使用
       link: /zh-CN/guide/getting-started.html

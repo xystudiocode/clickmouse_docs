@@ -28,7 +28,7 @@ Click on the sidebar to browse.
 - Custom click count
 
 ## ⬇️Download
-Go to [releases](https://github.com/xystudio889/pyClickMouse/releases) to download
+Go to [releases](https://github.com/xystudiocode/pyClickMouse/releases/releases) to download
 
 ## Usage Priority
 ```mermaid
