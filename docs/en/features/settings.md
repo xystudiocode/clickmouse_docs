@@ -168,6 +168,8 @@ layout: doc
 
 # Settings
 
+<important title="Tip">Some settings items need beta version and open some developing features to enable.</important>
+
 ## Function Description
 
 Can be used to manage clickmouse's operation strategies.
@@ -198,7 +200,7 @@ After switching language, software needs to restart to take effect.
 If custom language pack is not updated in time, lacking translation for new content, new content will display in English.
 :::
 - Keep Tray Icon: Used to control whether software shows icon in taskbar;
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `show_tray_icon`
 <note title="Tip">
@@ -211,10 +213,17 @@ If custom language pack is not updated in time, lacking translation for new cont
 - Reset Auto-start Configuration: If your auto-start shows window or has other issues, you can try clicking this button to repair.
 - - Type: Button
 - Software Feedback URL: Controls the URL opened during software feedback.
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
+
 - - Type: Input box
 - - Default value: [link](https://github.com/xystudiocode/pyclickmouse/issues/new/choose) `https://github.com/xystudiocode/pyclickmouse/issues/new/choose`
 - - Field name: `feedback`
+- Reset feedback URL: Reset the feedback URL to default value.
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
+
+- - Type: Button
 - Software Response Delay: Used to control software response speed; *Faster response delay means faster response when switching styles, but CPU usage will also be higher.*
+- - Type: Slider
 - - Default value: 100ms
 - - Minimum value: 1ms
 - - Maximum value: 1000ms
@@ -222,7 +231,9 @@ If custom language pack is not updated in time, lacking translation for new cont
 - - Field name: `soft_delay`
 
 - Hide "lab" tab when no experimental features: If checked, "lab" tab will be hidden when no experimental features.
-- - Type: Switch
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
+
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `hide_flags`
 
@@ -250,7 +261,7 @@ Setting items include:
 - - Optional values: Determined by style files, officially supports according to system color, light, dark
 - - Field name: `select_style`
 - Use Windows accent color to display components: Control whether components use Windows accent color; after turning off, use clickmouse color. See demo below
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `use_windows_color`
 <note title='Tip'>
@@ -300,7 +311,7 @@ Setting items include:
 - - Optional values: `Millisecond`, `Second`
 - - Field name: `delay_unit`
 - Default Value Used When Click Delay Error: If enabled, when click delay input box input error, will use default value
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: Off
 - - Field name: `delay_error_use_default`
 <note title='Tip'>
@@ -321,7 +332,7 @@ If turn off this option, only when click is empty will use default value; after 
 - - Optional values: `Times`, `Ten thousand times`, `Infinite`
 - - Field name: `times_unit`
 - Default Value Used When Click Count Error: If enabled, when click count input box input error, will use default value
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: Off
 - - Field name: `times_error_use_default`
 - Total Click Time: Total time calculated through software click count and interval.
@@ -336,7 +347,7 @@ If turn off this option, only when click is empty will use default value; after 
 Used to control software's update service, such as whether to auto-update, update check frequency.
 Setting items include:
 - Enable Update: If enabled, can manage update settings below.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_enabled`
 <caution title='Caution'>
@@ -348,7 +359,7 @@ If you find check update prompt: 'Update not enabled', please turn on this setti
 :::
 
 - Update Notification: If turned off, then cannot see update notification.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_notify`
 
@@ -359,7 +370,7 @@ This setting is independent of update completion notification, if turn off this 
 </note>
 
 - Silent Update: If enabled, then software update will not pop up notification box.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: Off
 - - Field name: `quiet_update`
 
@@ -368,7 +379,7 @@ If enable this setting, then update notification will be turned off, even if you
 </important>
 
 - Update Completion Notification: If enabled, then after update completion will pop up notification box.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_ok_notify`
 
@@ -390,7 +401,9 @@ Used to set software's hotkey functions, such as left click, right click hotkeys
 
 Setting items include:
 - Hotkey Enabled: If turned off, then software's hotkey function will be turned off.
-- - Type: Switch
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
+
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `hotkey_enabled`
 - Left Click Hotkey: Set left click hotkey.
@@ -447,7 +460,10 @@ Setting items include:
 - - Type: Input box
 - - Default value: [link](https://xystudiocode.github.io/clickmouse_docs/{lang})`https://xystudiocode.github.io/clickmouse_docs/{lang}`
 - - Field name: `doc_default_link`
+- Reset documentation default link: Used to restore default documentation default link.
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
 
+- - Type: Button
 ::: tip Tip
 `{lang}` will be replaced with current software language, such as `zh-CN` or `en`.
 :::
@@ -457,9 +473,13 @@ Setting items include:
 - - Default value: Software language
 - - Optional values: `Software language`, `System language` and according to software supported language packs (default `Simplified Chinese`, `English`)
 
-- Update Log Path:
+- Update Log Path: Set update log path.
 - - Type: Input box
 - - Default value: `updatelog`
+- Reset update log path: Used to restore default update log path.
+<note title="Tip">This setting item needs to enable <code>More settings</code> to enable.</note>
+
+- - Type: Button
 
 ::: tip Tip
 Software's update log path is relative to documentation default link path, such as default open update log link is [link](https://xystudiocode.github.io/clickmouse_docs/{lang}/updatelog)`https://xystudiocode.github.io/clickmouse_docs/{lang}/updatelog`, then update log path fill in `updatelog`.
@@ -478,7 +498,7 @@ Setting items include:
 Used to control software's update service, such as whether to auto-update, update check frequency.
 Setting items include:
 - Enable Update: If enabled, can manage update settings below.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_enabled`
 <caution title='Caution'>
@@ -490,7 +510,7 @@ If you find check update prompt: 'Update not enabled', please turn on this setti
 </important>
 
 - Update Notification: If turned off, then cannot see update notification.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_notify`
 
@@ -501,7 +521,7 @@ If enable this setting, then update notification will be turned off, even if you
 </note>
 
 - Update Completion Notification: If enabled, then after update completion will pop up notification box.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `update_ok_notify`
 
@@ -514,7 +534,7 @@ The update settings above are also affected by notification settings, if grayed 
 :::
 
 - Software Startup Warning: If enabled, then when software starts, resource loss will pop up warning notification box.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `show_warning`
 
@@ -523,7 +543,7 @@ clickmouse checks resources when starting, if finds missing some content, will p
 :::
 
 - Official Extension Package Missing Warning: If enabled, then when software starts, official extension package missing will pop up warning notification box.
-- - Type: Switch
+- - Type: Checkbox
 - - Default value: On
 - - Field name: `show_package_warning`
 

@@ -168,6 +168,8 @@ layout: doc
 
 # 设置
 
+<important title="注意">有些设置项目可能需要进入测试版本打开部分实验项目才能启用。</important>
+
 ## 功能介绍
 
 可以用来管理clickmouse运行时候的策略。
@@ -211,10 +213,17 @@ layout: doc
 - 重置开机自启动配置：如果你的开机自启动会显示窗口或有其他问题，可以尝试点击这个按钮来修复。
 - - 类型：按钮
 - 软件反馈网址：控制在软件反馈时候打开的网址。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
 - - 类型：输入框
 - - 默认值：[链接](https://github.com/xystudiocode/pyclickmouse/issues/new/choose) `https://github.com/xystudiocode/pyclickmouse/issues/new/choose`
 - - 字段名：`feedback`
+- 重置反馈链接：重置软件反馈网站的链接。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
+- - 类型：按钮
 - 软件响应延迟：用于控制软件响应速度；*相应延迟越快，软件在切换样式的时候相应越快，但是CPU占用率也会越高。*
+- - 类型：滑块
 - - 默认值：100ms
 - - 最小值：1ms
 - - 最大值：1000ms
@@ -222,6 +231,8 @@ layout: doc
 - - 字段名：`soft_delay`
 
 - 无实验项时候隐藏“实验室”设置项：如果勾选，没有实验室设置项目时候，“实验室”设置项会被隐藏。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
 - - 类型：开关
 - - 默认值：开启
 - - 字段名：`hide_flags`
@@ -390,6 +401,8 @@ layout: doc
 
 设置项目有：
 - 热键启用：如果关闭，那么软件的热键功能将会关闭。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
 - - 类型：开关
 - - 默认值：开
 - - 字段名：`hotkey_enabled`
@@ -447,6 +460,10 @@ layout: doc
 - - 类型：输入框
 - - 默认值：[链接](https://xystudiocode.github.io/clickmouse_docs/{lang})`https://xystudiocode.github.io/clickmouse_docs/{lang}`
 - - 字段名：`doc_default_link`
+- 重置文档默认链接：用于恢复默认文档默认链接。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
+- - 类型：按钮
 
 ::: tip 提示
 `{lang}`会被替换为当前软件语言，如`zh-CN`或`en`。
@@ -457,7 +474,7 @@ layout: doc
 - - 默认值：软件语言
 - - 可选值：`软件语言`、`系统语言`和根据软件支持的语言包(默认`简体中文`、`英语`)
 
-- 更新日志路径：
+- 更新日志路径：设置更新日志的路径。
 - - 类型：输入框
 - - 默认值：`updatelog`
 
@@ -465,11 +482,18 @@ layout: doc
 软件的更新日志路径是相对于文档默认连接的路径，如默认的打开更新日志的链接是[链接](https://xystudiocode.github.io/clickmouse_docs/{lang}/updatelog)`https://xystudiocode.github.io/clickmouse_docs/{lang}/updatelog`，那么更新日志路径就填入`updatelog`。
 :::
 
+- 重置更新日志路径：用于恢复默认更新日志路径。
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
+
+- - 类型：按钮
+
 > 这一段的{lang}也会被解析。
 
 <img class="doc" alt="文档设置" />
 
 ## 通知设置
+
+<note title="提示">这个设置项需要在实验室开启<code>More settings</code>才能启用</note>
 
 用于控制软件的通知提醒，如是否显示通知。
 

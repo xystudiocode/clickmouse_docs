@@ -85,7 +85,7 @@
                 }}
                 <a
                     href="https://github.com/xystudiocode/pyClickMouse/blob/main/CONTRIBUTING.md"
-                    >{{ LangPack.Guidelines ?? 'contributing guidelines' }}</a
+                    >{{ LangPack.GuideLines ?? 'contributing guidelines' }}</a
                 >
                 {{ LangPack.And ?? 'and' }}
                 <a
