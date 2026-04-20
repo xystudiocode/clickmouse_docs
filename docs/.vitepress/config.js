@@ -118,6 +118,10 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.2.21',
+                          link: '/en/updatelog/final/3/32221.html',
+                        },
+                        {
                           text: '3.2.1.20',
                           link: '/en/updatelog/final/3/32120.html',
                         },
@@ -225,6 +229,10 @@ export default withMermaid({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.3.0.22alpha4',
+                          link: '/en/updatelog/beta/3/33022a4.html',
+                        },
                         {
                           text: '3.2.1.20alpha2',
                           link: '/en/updatelog/beta/3/32120a2.html',
@@ -518,6 +526,10 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.2.21',
+                          link: '/zh-CN/updatelog/final/3/32221.html',
+                        },
+                        {
                           text: '3.2.1.20',
                           link: '/zh-CN/updatelog/final/3/32120.html'
                         },
@@ -625,6 +637,10 @@ export default withMermaid({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.3.0.22alpha4',
+                          link: '/zh-CN/updatelog/beta/3/33022a4.html',
+                        },
                         {
                           text: '3.2.1.20alpha2',
                           link: '/zh-CN/updatelog/beta/3/32120a2.html',
