@@ -118,6 +118,10 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.3.22',
+                          link: '/en/updatelog/final/3/32322.html',
+                        },
+                        {
                           text: '3.2.2.21',
                           link: '/en/updatelog/final/3/32221.html',
                         },
@@ -230,15 +234,19 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
-                          text: '3.3.0.22alpha4',
+                          text: '3.3.0.23alpha5',
+                          link: '/en/updatelog/beta/3/33023a5.html',
+                        },
+                        {
+                          text: '3.3.0.23alpha4',
                           link: '/en/updatelog/beta/3/33022a4.html',
                         },
                         {
-                          text: '3.2.1.20alpha2',
+                          text: '3.3.0.23alpha2',
                           link: '/en/updatelog/beta/3/32120a2.html',
                         },
                         {
-                          text: '3.2.1.20alpha1',
+                          text: '3.3.0.23alpha1',
                           link: '/en/updatelog/beta/3/32120a1.html',
                         },
                         {
@@ -526,6 +534,10 @@ export default withMermaid({
                       collapsed: true,
                       items: [
                         {
+                          text: '3.2.3.22',
+                          link: '/zh-CN/updatelog/final/3/32322.html',
+                        },
+                        {
                           text: '3.2.2.21',
                           link: '/zh-CN/updatelog/final/3/32221.html',
                         },
@@ -637,6 +649,10 @@ export default withMermaid({
                       text: 'v3.x.x.x',
                       collapsed: true,
                       items: [
+                        {
+                          text: '3.3.0.23alpha5',
+                          link: '/zh-CN/updatelog/beta/3/33023a5.html',
+                        },
                         {
                           text: '3.3.0.22alpha4',
                           link: '/zh-CN/updatelog/beta/3/33022a4.html',
