@@ -63,6 +63,8 @@ export default {
         UnOrderedList: '无序列表',
         NumList: '数字列表',
         TaskList: '任务列表',
+        AddFile: '复制，拖动或选择文件到此处。',
+        Nothing: '没有要预览的内容。'
       },
       feature_reason: '解决了什么问题?\n改进了什么?\n其他原因...',
       task_idea: `- 新功能1:
@@ -126,11 +128,15 @@ export default {
       Milestone: '里程碑',
       Product: '记住，贡献到这个仓库的任何内容都应该遵循其',
       GuideLines: '贡献指南',
-      Security: '安全',
+      Security: '安全政策',
       And: '和',
       CreateMore: '创建更多',
       Cancel: '取消',
       Create: '创建',
+      Priority: '优先级',
+      Effort: '影响',
+      StartDate: '开始日期',
+      TargetDate: '结束日期',
     },
     bugLabel: {
       Label: 'bug',
@@ -140,10 +146,25 @@ export default {
       Label: 'enhancement',
       Type: 'Feature'
     },
+    taskLabel: {
+      Label: "enhancement",
+      Type: "Task"
+    }
     }
   }
 }
 </script>
+<style scoped>
+.desc {
+    color: #9198a1;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+a, a:hover { 
+  color: #0969da;
+}
+</style>
 
 # issue模板
 
@@ -159,7 +180,8 @@ export default {
 <tip title='提示'>请一次只报告1个问题。😀</tip>
 <subtitle required='true' desc='反馈三位或四位版本号，可前往"帮助" - "关于"界面查看当前clickmouse版本号'>🔡Clickmouse版本</subtitle>
 <ginput text='' place='X.X.X 或 X.X.X.X'></ginput>
-<subtitle required='true' desc='❗clickmouse官方版本只在github releases(https://github.com/xystudiocode/pyclickmouse/releases)或gitee releases(https://gitee.com/xystudiocode/pyclickmouse/releases)页面发布，其他均为非官方版本。'>🎭你是否从官方版本发现bug</subtitle>
+<subtitle required='true'>🎭你是否从官方版本发现bug</subtitle>
+<p class="desc">❗clickmouse官方版本只在<a href="https://github.com/xystudiocode/pyclickmouse/releases">github releases</a>或<a href="https://gitee.com/xystudiocode/pyclickmouse/releases">gitee releases</a>页面发布，其他均为非官方版本。</p>
 <choiceBox :placeholder='ChoicePlace' v-model='defaultOfficalSelect' :options='officalOptions'>
 </choiceBox>
 <br />
@@ -187,7 +209,7 @@ export default {
 
 一个你建议添加的新功能。
 <br />
-<strongCard LabelColor='#a2eeef' TypeColor='#0969da' LabelText='enhancement' TypeText='Feature' :LangPack='{...CardLangPack, ...featureLabel}'>
+<strongCard LabelColor='#a2eeef' TypeColor='#0969da' LabelText='enhancement' TypeText='Feature' :LangPack='{...CardLangPack, ...featureLabel}' ShowDate='true'>
 <subtitle required='true' noTopMargin='true'>添加一个标题</subtitle>
 <ginput text='❇️[FEATURE]'></ginput>
 <note title='批注'>为避免造成更多的麻烦，请在报告issue前，先检查是否有其他人已经报告过相同的问题。<a href="https://github.com/xystudiocode/pyclickmouse/issues">检查是否存在重复</a>😊</note>
