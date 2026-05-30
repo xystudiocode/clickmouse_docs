@@ -62,6 +62,8 @@ export default {
         UnOrderedList: 'Unordered List',
         NumList: 'Numbered List',
         TaskList: 'Task List',
+        AddFile: 'Paste, drop or click to add files.',
+        Nothing: 'Nothing to preview.',
       },
       feature_reason: 'What problem does it solve?\nWhat does it improve?\nOther reasons...',
       task_idea: `- New feature 1:\n- - Implementation plan 1:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 2:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 3:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Other implementation plans...\n- New feature 2:\n- - Implementation plan 1:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 2:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 3:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Other implementation plans...\n- New feature 3:\n- - Implementation plan 1:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 2:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Implementation plan 3:\n- - 1. Implementation step 1\n- - 2. Implementation step 2\n- - 3. Implementation step 3\n- - 4. Implementation step ...\n- - Other implementation plans...\n- Other features...`,
@@ -79,6 +81,10 @@ export default {
         CreateMore: 'Create More',
         Cancel: 'Cancel',
         Create: 'Create',
+        Priority: 'Priority',
+        Effort: 'Effort',
+        StartDate: 'Start date',
+        TargetDate: 'Target date',
       },
       bugLabel: {
         Label: 'bug',
@@ -88,10 +94,26 @@ export default {
         Label: 'enhancement',
         Type: 'Feature'
       },
+      taskLabel: {
+        Label: "enhancement",
+        Type: "Task"
+      }
     }
   }
 }
 </script>
+
+<style scoped>
+.desc {
+    color: #9198a1;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 0.75rem;
+}
+a, a:hover { 
+  color: #0969da;
+}
+</style>
 
 # issue template
 ## Bug Report
@@ -105,7 +127,8 @@ Report a bug.
 <tip title='Tip'>Please only report 1 problem at a time.😀</tip>
 <subtitle required='true' desc='Feedback three or four digit version number, can go to "Help" - "About" interface view current clickmouse version number'>🔡Clickmouse version</subtitle>
 <ginput text='' place='X.X.X or X.X.X.X'></ginput>
-<subtitle required='true' desc='❗clickmouse official version only published on github releases(https://github.com/xystudiocode/pyclickmouse/releases) or gitee releases(https://gitee.com/xystudiocode/pyclickmouse/releases) page, others are unofficial versions.'>🎭Did you discover bug from official version</subtitle>
+<subtitle required='true'>🎭Did you discover bug from official version</subtitle>
+<p class="desc">❗clickmouse official version only published on<a href="https://github.com/xystudiocode/pyclickmouse/releases">github releases</a> or <a href="https://gitee.com/xystudiocode/pyclickmouse/releases">gitee releases</a>, others are unofficial versions.</p>
 <choiceBox v-model='defaultOfficalSelect' :options='officalOptions'>
 </choiceBox>
 <br />
@@ -132,7 +155,7 @@ Report a bug.
 ## Feature Request
 A new feature you suggest to add.
 <br />
-<strongCard LabelColor='#a2eeef' TypeColor='#0969da' :LangPack='{...CardLangPack, ...featureLabel}'>
+<strongCard LabelColor='#a2eeef' TypeColor='#0969da' :LangPack='{...CardLangPack, ...featureLabel}' :ShowDate='true'>
 <subtitle required='true' noTopMargin='true'>Add a title</subtitle>
 <ginput text='❇️[FEATURE]'></ginput>
 <note title='Note'>To avoid causing more trouble, before reporting issue, first check if others have already reported same problem.<a href="https://github.com/xystudiocode/pyclickmouse/issues">Check if duplicate exists</a>😊</note>
